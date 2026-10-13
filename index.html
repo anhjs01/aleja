@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4c382e">
+  <meta name="description" content="Un recordatorio muy serio —y nada exagerado— de que Aleja debe almorzar.">
+  <title>Aleja, vaya a almorzar 🍽️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scrim" aria-hidden="true"></div>
+  <main class="page">
+    <section class="card" aria-labelledby="main-title">
+      <p class="eyebrow">COMUNICADO OFICIAL DEL DEPARTAMENTO DE ALMUERZOS</p>
+      <div class="portrait-wrap">
+        <img class="portrait" src="imagen.jpg" alt="Aleja, protagonista de esta importante misión alimenticia">
+        <span class="photo-note">Evidencia de que está distraída 📸</span>
+      </div>
+      <div class="food-icon" aria-hidden="true">🍲</div>
+      <h1 id="main-title">¿Y entonces… vamos a almorzar o qué? 🍽️</h1>
+      <p class="intro">Responde con sinceridad, que la pregunta es seria. 😂</p>
+      <p id="roast" class="roast" aria-live="polite">La cocina está abierta y esta señorita sigue haciéndose la difícil.</p>
+      <div class="actions">
+        <button class="btn btn-yes" id="yesBtn" type="button">Sí, ya voy a comer 🍽️</button>
+        <button class="btn btn-no" id="noBtn" type="button">No, no quiero 🙄</button>
+      </div>
+      <p class="fine-print">Aviso: la belleza no se recarga con Wi-Fi. 🔋</p>
+    </section>
+  </main>
+
+  <aside class="music-bar" aria-label="Controles de música">
+    <div class="track-icon" aria-hidden="true">♫</div>
+    <div class="track-copy"><strong>butterflies.</strong><span>Brent Faiyaz · YouTube</span></div>
+    <button id="musicBtn" class="music-btn" type="button" aria-pressed="false">▶ Reproducir</button>
+    <button id="musicHide" class="music-hide" type="button" aria-label="Mostrar u ocultar reproductor">⌄</button>
+  </aside>
+  <div class="youtube-shell" id="youtubeShell" aria-hidden="true">
+    <iframe id="youtubePlayer" title="Reproductor de YouTube: butterflies. de Brent Faiyaz"
+      src="https://www.youtube-nocookie.com/embed/P4GnrzUACmU?enablejsapi=1&playsinline=1&controls=1&rel=0"
+      allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+
+  <div class="modal-backdrop" id="successModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalText">
+      <button class="modal-x" id="closeX" type="button" aria-label="Cerrar ventana">×</button>
+      <div class="celebration" aria-hidden="true">🦝 🍛 🥄</div>
+      <h2 id="modalTitle">¡Milagro, decidió alimentarse! 😂</h2>
+      <p id="modalText">La belleza se ha salvado por hoy. Puede proceder a almorzar con tranquilidad. 💅🍽️</p>
+      <button class="btn btn-yes modal-done" id="doneBtn" type="button">Listo, misión cumplida ✅</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
